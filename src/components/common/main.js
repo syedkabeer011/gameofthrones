@@ -4,6 +4,7 @@ import ErrorBoundary from './errorBoundary';
 import PageSpinner from '../common/PageSpinner';
 
 const GameOfThronesContainer = React.lazy(() => import('../containers/gameOfThronesContainer'));
+const RoutingComponent = React.lazy(() => import('../containers/routingComponent'));
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -23,7 +24,9 @@ class MainPage extends React.Component {
                                 render={props => <GameOfThronesContainer {...props} />} />
                             <Route exact path="/books/:id"
                                 render={props => <GameOfThronesContainer {...props} />} />
-                            </React.Suspense>
+                            <Route exact path="/"
+                                render={props => <RoutingComponent {...props} />} />
+                    </React.Suspense>
                     </Switch>
                 </ErrorBoundary>
             </React.Fragment>

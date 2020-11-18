@@ -37,7 +37,19 @@ class GameOfThronesContainer extends React.Component {
         console.log(gotDataNew);
         return (
             <React.Fragment>
-                <div>hi</div>
+                <div><span>Book Title: </span>{gotDataNew.titles}</div>
+                <div><span>Book URL: </span>{gotDataNew.url}</div>
+                <div><span>Name: </span>{gotDataNew.name}</div>
+                <div><span>Gender: </span>{gotDataNew.gender}</div>
+                <div><span>Culture: </span>{gotDataNew.culture}</div>
+                <div><span>Born: </span>{gotDataNew.born}</div>
+                <div><span>Books:  </span>{gotDataNew.books}</div>
+                <div><span>POV Books: </span>{gotDataNew?.povBooks?.map((a)=> (
+                <>
+                <div key={gotDataNew.url}><a href={a}>{a}</a></div>
+                </>
+                ))}</div>
+
             </React.Fragment>
         );
     }
