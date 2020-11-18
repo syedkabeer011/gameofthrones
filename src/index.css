@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Poppins', 'Courier New', 'Montserrat',
+    monospace;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Poppins', 'Montserrat', sans-serif !important;
+}
+
+
+/* to hide number scroll STARTS*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* to hide number scroll ENDS*/
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #74788da2; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #74788d; 
+}
+
+/* Individual scrollbars */
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background:transparent; 
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
